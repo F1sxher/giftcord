@@ -1,0 +1,55 @@
+{
+  "name": "giftcord",
+  "version": "1.0.0-beta",
+  "description": "The bot that keeps on giving",
+  "main": "src/index.bot.ts",
+  "scripts": {
+    "start": "nodemon src/index.bot.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F1sxher/giftcord.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discordbot",
+    "typescript",
+    "discord.js",
+    "christmas",
+    "giftcord"
+  ],
+  "authors": [
+    {
+      "name": "F1sxher",
+      "email": "fisher@tyra.digital",
+      "github": "https://github.com/F1sxher"
+    },
+    {
+      "name": "Alfred",
+      "email": "",
+      "github": "https://github.com/Alfred-207"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/F1sxher/giftcord/issues"
+  },
+  "homepage": "https://github.com/F1sxher/giftcord#readme",
+  "devDependencies": {
+    "@types/figlet": "^1.5.4",
+    "@types/node": "^16.7.2"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "chalk": "^4.1.2",
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "figlet": "^1.5.2",
+    "mongoose": "^6.0.2",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
