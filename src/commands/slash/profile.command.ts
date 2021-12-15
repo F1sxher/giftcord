@@ -188,7 +188,7 @@ export default abstract class ProfileCommand extends Command {
           emoji: "❄️",
         },
         {
-          name: "snow_cloud",
+          name: "cloud_snow",
           emoji: "🌨️",
         },
         {
@@ -232,7 +232,7 @@ export default abstract class ProfileCommand extends Command {
           emoji: "🥠",
         },
         {
-          name: "panacakes",
+          name: "pancakes",
           emoji: "🥞",
         },
       ];
