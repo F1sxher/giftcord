@@ -120,7 +120,9 @@ export default class Model {
   }
 
   public async deleteOne(query: partial, clone?: boolean) {
-    let document = this.model.deleteOne(query, (err) => {
+    let document;
+
+    if (!clone) document = this.model.deleteOne(query, (err) => {
       if (err) {
         return err;
       }
@@ -128,7 +130,13 @@ export default class Model {
       return null;
     });
 
-    if (clone) document.clone();
+    if (clone) document = this.model.deleteOne(query, (err) => {
+      if (err) {
+        return err;
+      }
+
+      return null;
+    }).clone();
 
     return document;
   }
