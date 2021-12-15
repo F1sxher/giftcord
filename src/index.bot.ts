@@ -34,6 +34,7 @@ const activities: ActivitiesOptions[] = [
   { type: "COMPETING", name: "snowball fights" },
   { type: "LISTENING", name: "christmas music" },
   { type: "PLAYING", name: "Giftcord | /help" },
+  {type: "PLAYING", name: "with the elves"},
   { type: "WATCHING", name: "christmas movies" },
 ];
 
@@ -104,8 +105,6 @@ client.on("messageCreate", async (message) => {
     let newXp = dbUser.currentXp + Math.floor(Math.random() * 4 + 1);
     let newLevel;
     let newRequired;
-
-    console.log(newXp + "/" + (newRequired || dbUser.xpRequired));
 
     if (newXp >= Number.parseInt(dbUser.xpRequired)) {
       newLevel = dbUser.currentLevel + 1;
